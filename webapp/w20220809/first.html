@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<!-- form:모든 name 값들이 form안에 있어야한다. 
+	      action:다음페이지
+	      method:get,post
+	      get:url? 파라미터 이름 = 값&파라미터 이름2 = 값&파라미터 이름3 = 값 255자를 넘으면 않된다.
+	      카카오 연동 : get userid=kim1234&passwd=1234
+	      post:내부적으로 값이 넘어간다(was 안에 있을때 )
+	      was:web appplication sever(stand alone server):java,jsp,servlet 돌릴 수 있도록 만드는 서버(혼자도는 서버)
+	      tomcat(무료), jesus6(상용:현대)
+	      webserver(apache, webtob) + was : 웹서버 + was 서버
+	      
+	      *.html:hyper text markup language -> java 코드가 안된다.
+	      *.jsp(java server page):java 코드를 쓸 수 있다.
+	      -->
+	<form action="nextjspinput.jsp" method="post">
+	<div align="center">
+	<img src="file:///C:/project/work/egovwork/awsproject/src/main/webapp/w20220809/coupang.png" width="50"><br>
+	</div>
+	<div align="center">
+	<img src="C:\project\work\egovwork\awsproject\src\main\webapp\w20220809\id.jpg" width="30" height="30">
+	<input type="text" name="userid" ><br>
+	<img alt="" src="C:\project\work\egovwork\awsproject\src\main\webapp\w20220809\pw.jpg" width="30" height="30">
+	<input type="text" name="passwd"><br>
+	<input type="submit" value="로그인"" ><br>
+	<input type="button" value="회원가입">
+	</div>
+	</form>
+	
+	
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- array =new Array(11); -->
+<!-- 배열 짝수 홀수 3 6 9배제 0~10 까지 값을 담고 합을 출력하시오. -->
+
+<!-- array2=[0,1,2,3,4,5,6,7,8,9,10]; -->
+
+<!-- array3=[]; -->
+
+<script type="text/javascript">
+	function Question1() {
+		var even = 0;
+		var odd = 0;
+		var evensum = document.getElementById("div1");
+		var oddsum = document.getElementById("div2");
+		
+		var arr = new Array(11);
+		arr[0] = 0;
+		arr[1] = 1;
+		arr[2] = 2;
+		arr[3] = 3;
+		arr[4] = 4;
+		arr[5] = 5;
+		arr[6] = 6;
+		arr[7] = 7;
+		arr[8] = 8;
+		arr[9] = 9;
+		arr[10] = 10;
+		
+		for(var i = 0; i<arr.length;i++){
+			if(arr[i] % 3 !=0){
+				if(arr[i]%2==0){
+					even = even + arr[i]; 
+				}else{
+					odd = odd + arr[i];
+				}
+			}
+		}
+		console.log("짝수의 합" + even);
+		console.log("홀수의 합" + odd);
+		
+		evensum.innerHTML = "<h2>짝수의 합</h2>" + even; 
+		oddsum.innerHTML = "<h2>홀수의 합</h2>" + odd;
+		
+		
+	}
+
+
+
+	function Question2() {
+		var evensum = document.getElementById("div1");
+		var oddsum = document.getElementById("div2");
+		
+		var array2 = [0,1,2,3,4,5,6,7,8,9,10];
+		var even = 0;
+		var odd = 0;
+		
+		for(var i = 0; i<array2.length;i++){
+			if(i % 3 !=0){
+				if(i%2==0){
+					even = even + i; 
+				}else{
+					odd = odd + i;
+				}
+			}
+			
+		}
+		console.log("짝수의 합" + even);
+		console.log("홀수의 합" + odd);
+		
+		evensum.innerHTML = "<h2>짝수의 합</h2>" + even; 
+		oddsum.innerHTML = "<h2>홀수의 합</h2>" + odd;
+	}
+	
+	function Question3() {
+		var evensum = document.getElementById("div1");
+		var oddsum = document.getElementById("div2");
+		var even = 0;
+		var odd = 0;
+		
+		var arr3 = [];
+		for(var i =0; i<11;i++){
+			arr3[i] = i;		
+		} // 우선적으로 배열에 값을 넣어준다.
+		
+		for(var i = 0; i< arr3.length; i++){
+			
+			if(arr3[i] % 3 != 0){ // 3의 배수가 아닐 경우 출력
+				if(arr3[i]%2 == 0){
+				console.log("짝수"+arr3[i]);
+				even = even +arr3[i];
+				}else{
+					console.log(arr3[i]);
+					odd = odd + arr3[i];
+				}
+			}
+		}
+		console.log("짝수의 합" + even);
+		console.log("홀수의 합" + odd);
+		
+		evensum.innerHTML = "<h2>짝수의 합</h2>" + even; 
+		oddsum.innerHTML = "<h2>홀수의 합</h2>" + odd;
+		
+	}
+
+
+</script>
+
+</head>
+<body onload="Question1()">
+	<form action="">
+	<div id = "div1">
+	
+	</div>
+	<div id = "div2">
+	
+	</div>
+	
+	<input type="button" value="array"  onclick="Question1()">
+	<input type="button" value="array2"  onclick="Question2()">
+	<input type="button" value="array3"  onclick="Question3()">
+	</form>
+</body>
+</html>

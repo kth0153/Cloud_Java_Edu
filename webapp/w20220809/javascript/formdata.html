@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function Login() {
+		
+		var frm = document.frmlogin;
+		frm.method = "get";
+		frm.action = "nextformdata.jsp";
+		// 다음 모든 제어권 페이지로 이동
+		frm.submit();
+
+	}
+</script>
+
+
+
+</head>
+<body>
+	<form name="frmlogin">
+
+		<!-- nextformdata.jsp
+	로그인 되었습니다. -->
+
+		<input type="text" name="userid" id="" /> <input type="text"
+			name="passwd" id="" /> <input type="button" value="로그인"
+			onclick="Login()" />
+
+	</form>
+
+
+</body>
+</html>

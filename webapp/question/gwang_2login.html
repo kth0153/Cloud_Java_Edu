@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	 <script type="text/javascript">
+	 
+	 
+	 	function Login() {
+	 		var frm = document.loginfrm;
+	 		var id = frm.userid.value;
+	 		var password = frm.passwd.value;
+	 		
+	 		if(id == "kim1234" && password == "1234"){
+			
+			frm.action = "gwang_2main.html";
+			frm.method="post";
+	 		frm.submit();
+	 		
+	 		} else{
+	 			alert("아이디나 비밀번호가 일치하지 않습니다.");
+	 		}
+		}
+	 
+	 function InputLogin() {
+		 var frm = document.loginfrm;
+		 frm.action = "gwang_2input.html";
+		 frm.method = "get";
+		 frm.submit();
+	}
+	 
+	 
+	 
+	 </script>
+
+
+
+</head>
+<body>
+	<form action="" name = "loginfrm">
+		<table border="1" width="500" height="500">
+		<tr>
+			<td>userid</td>
+			<td><input type="text" name="userid"  id=""> </td>
+			
+		</tr>
+	
+		<tr>
+			<td>passwd</td>
+			<td><input type="password" name="passwd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="로그인"  onclick="Login()"> </td>
+			<td><input type="button" value="회원가입" onclick="InputLogin()"> </td>
+			
+		</tr>
+	
+	</table>								
+	
+	
+	
+	
+	</form>
+
+</body>
+</html>

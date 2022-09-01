@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function Login() {
+		// main page
+		var frm = document.gwang1frm;
+		
+		if((frm.userid.value == "kim1234") && (frm.passwd.value == "1234")){
+			
+		frm.action = "gwang1_index.html";
+		frm.method = "post";
+		frm.submit();
+			
+		}else{
+			alert("아이디나 패스워드가 틀렸습니다. 다시입력해 주세요");
+		}
+			
+	}
+	
+	function InputLogin() {
+		// 회원가입
+		var frm = document.gwang1frm;
+		frm.action = "gwang1_input.html";
+		frm.method = "post";
+		frm.submit();
+		
+	}
+
+
+</script>
+
+
+
+</head>
+<body>
+	<form action="" name="gwang1frm">
+	<table border="1" width="500" height="500">
+		<tr>
+			<td>userid</td>
+			<td><input type="text" name="userid" id=""> </td>
+			
+		</tr>
+	
+		<tr>
+			<td>passwd</td>
+			<td><input type="password" name="passwd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="로그인"  onclick="Login()"> </td>
+			<td><input type="button" value="회원가입" onclick="InputLogin()"> </td>
+			
+		</tr>
+	
+	</table>								
+</form>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="naver2next.jsp" method="get">
+	
+	<div align="center">
+	<img src="C:\project\work\egovwork\awsproject\src\main\webapp\w20220809\commonlogin\naver.png">
+	</div>
+	<ul style="list-style-type: none;">
+		<li>
+			<input type="text" value="아이디"><br>
+			<input type="text" name="id"  placeholder="@naver.com">
+		</li>
+		<li>
+			<input type="text" value="비밀번호"><br>
+			<input type="text" name=" passwd" >
+		</li>
+		<li>
+			<input type="text" value="비밀번호 재확인"><br>
+			<input type="text" name="passwdre" >
+		</li>
+		
+		<li>
+			<input type="text" value="이름"><br>
+			<input type="text" name="name" >
+		</li><br>
+		
+		<li>
+			<input type="text" value="생년월일"><br>
+			<input type="text" name=" year" placeholder="년(4자)">
+			<select name="month">
+				<option value="월">월</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<input type="text" name="day" placeholder="일">
+		</li><br>
+		
+		<li>
+			<input type="text" value="성별"><br>
+			<select name="mw">
+				<option value="성별">성별</option>
+				<option value="남자">남자</option>
+				<option value="여자">여자</option>
+				<option value="성별없음">성별없음</option>
+			</select>
+		</li><br>
+		
+		<li>
+			<input type="text" value="본인 확인 이메일(선택)"><br>
+			<input type="text" name="emailch" placeholder="선택입력">
+		</li>
+		
+		<li>
+			<input type="text" value="휴대전화"><br>
+			<select name="phoneselect">
+				<option value=" 대한민국+82">대한민국+82</option>
+				<option value="그리스">그리스+30</option>
+				<option value="네덜란드">네덜란드+31</option>
+				<option value="나이지리아">나이지리아+234</option>
+			</select><br>
+			<input type="text" name="phone" placeholder="전화번호  입력">
+			<input type="button" name="numsend" value="인증번호 받기"><br>
+			<input type="text" name="phonech" placeholder="인증번호 입력하세요">
+		</li>
+		<li>
+			<input type="submit" value="가입하기">
+		</li>
+		
+	</ul>
+
+
+
+
+
+
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Gwang1Login() {
+		var frm = document.gwang1frm;
+		
+		frm.action = "gwang1_main.html";
+		frm.method = "post";
+		frm.submit();	
+			if((frm.userid.value=="kim1234") && (frm.passwd.value=="1234")){
+				frm.action = "gwang_1main.html";
+				frm.submit();
+			}else{
+				alert("유저아이디나 비밀번호가 틀립니다.");
+				return;
+			}
+			
+	}
+	
+
+	function Gwang1InputLogin() {
+		var frm = document.gwang1frm;
+		
+		frm.action = "gwang1_input.html";
+		frm.method = "post";
+		frm.submit();
+	}
+
+
+</script>
+
+
+</head>
+<body>
+<!-- 	table[board =1 width = 500 height = 500]>tr*3>td*2>input:t{$} 한번에 만드는 방법-->
+
+	<form  name = "gwang1frm">
+		<table border="1" width="500" height="500">
+		<tr>
+			<td>userid</td>
+			<td><input type="text" name="userid"  id=""> </td>			
+		</tr>
+	
+		<tr>
+			<td>passwd</td>
+			<td><input type="password" name="passwd" id=""> </td>		
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="로그인"  onclick="Gwang1Login()"> </td>
+			<td><input type="button" value="회원가입" onclick="Gwang1InputLogin()"> </td>		
+		</tr>
+	
+	</table>								
+	
+	
+	
+	
+	</form>
+
+
+
+</body>
+</html>

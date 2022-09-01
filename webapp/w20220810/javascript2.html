@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function ArrayList() {
+		var arr = new Array(5);
+
+		arr[0]	= 0;
+		arr[1]	= 1;
+		arr[2]	= 2;
+		arr[3]	= 3;
+		arr[4]	= 4;
+		
+		for(var i =0; i<arr.length; i++){
+			console.log(arr[i]);
+		}
+		
+	}
+	
+	function ArrayList2() {
+		var arr =[];
+		
+		for(var i = 0; i<5 ;i++){
+			arr[i] = i+1;
+			console.log(arr[i]);
+		}
+	}
+	
+	function ArrayList3() {
+		
+		
+		var arr =[1,2,3,4,5];
+		
+		for(var i =0; i<arr.length;i++){
+			console.log(i);
+		}
+	}
+
+
+</script>
+
+</head>
+<body onload="ArrayList()">
+
+	<input type="button" value="array2" onclick="ArrayList2()">
+	<input type="button" value="array3" onclick="ArrayList3()">
+	
+</body>
+</html>

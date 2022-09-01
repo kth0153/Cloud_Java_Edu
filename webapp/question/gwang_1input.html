@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+		function InputLogin() {
+			
+			var frm = document.inputfrm;
+			
+			if(frm.passwd.value==frm.repasswd.value){
+				if((frm.userid.value=="kim1234") && (frm.passwd.value=="1234")){
+					frm.action = "gwang_1main.html";
+					frm.submit();
+				}else{
+					alert("유저아이디나 비밀번호가 틀립니다.");
+			}
+			}else{
+				alert("비밀번호가 틀립니다.");
+			}
+		}
+	
+	</script>
+
+
+
+
+
+</head>
+<body>
+<form name="inputfrm">
+	<table border="1" width="500" height="500">
+		<tr>
+			<td>userid</td>
+			<td><input type="text" name="userid" id=""> </td>
+			
+		</tr>
+	
+		<tr>
+			<td>passwd</td>
+			<td><input type="password" name="passwd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>repasswd</td>
+			<td><input type="password" name="repasswd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>email</td>
+			<td><input type="text" name="email" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td colspan="2"><input type="button" value="회원가입" onclick="InputLogin()"> </td>
+		</tr>
+	
+	</table>								
+</form>
+
+</body>
+</html>

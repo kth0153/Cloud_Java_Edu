@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function Login() {
+		var frm = document.commonfrm;
+		
+		if(frm.userid.value == "kim1234" && frm.passwd.value == "1234" && frm.email.value == "123@123"){
+			frm.action = "commonmain.html";
+			frm.method = "post";
+			alert("메인으로이동");
+			frm.submit();
+		}else{
+			alert("정보가 정확하지 않습니다.");
+			return;
+		}
+	}
+	
+	function InputLogin() {
+		var frm = document.commonfrm;
+
+			frm.action = "commoninputlogin.html";
+			alert("회원가입 으로이동");
+			frm.submit();
+			
+	}
+
+
+
+</script>
+</head>
+<body>
+	<form action="" name="commonfrm">
+	<table border="1" width="500" height="500">
+		<tr>
+			<td>userid</td>
+			<td><input type="text" name="userid" id=""> </td>
+			
+		</tr>
+	
+		<tr>
+			<td>passwd</td>
+			<td><input type="password" name="passwd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>email</td>
+			<td><input type="password" name="email" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="로그인"  onclick="Login()"> </td>
+			<td><input type="button" value="회원가입" onclick="InputLogin()"> </td>
+			
+		</tr>
+	
+	</table>								
+</form>
+</body>
+
+</html>

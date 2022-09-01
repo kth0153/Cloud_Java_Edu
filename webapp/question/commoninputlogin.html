@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function InputLogin() {
+	var frm = document.commonfrm;
+	
+	if(frm.userid.value != ""&&frm.passwd.value != ""&&frm.repasswd.value != ""&&frm.email.value != ""&&frm.jumin1.value != ""&&frm.jumin2.value != ""){
+		
+		if(frm.passwd.value==frm.repasswd.value){
+				frm.action = "gwang_1main.html";
+				frm.method="post";
+				alert("회원가입 성공 메인으로 이동합니다.")
+				frm.submit();
+			}else{
+				alert("비밀번호가 틀립니다.");s
+		}
+			}else{
+				alert("정보를 모두 작성해야 합니다.");
+				return;
+			}
+		
+	}
+
+
+</script>
+
+
+</head>
+<body>
+
+<form action="" name="commonfrm">
+	<table border="1" width="500" height="500">
+		<tr>
+			<td>userid</td>
+			<td><input type="text" name="userid" id=""> </td>
+			
+		</tr>
+	
+		<tr>
+			<td>passwd</td>
+			<td><input type="text" name="passwd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>repasswd</td>
+			<td><input type="text" name="repasswd" id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>email</td>
+			<td><input type="text" name="email"  id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>jumin1</td>
+			<td><input type="text" name="jumin1"  id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td>jumin2</td>
+			<td><input type="text" name="jumin2"  id=""> </td>
+			
+		</tr>
+		
+		<tr>
+			<td><input type="button" value="회원가입" onclick="InputLogin()"> </td>
+
+		</tr>
+	
+	</table>								
+</form>
+
+</body>
+</html>

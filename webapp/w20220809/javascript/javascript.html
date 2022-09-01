@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<!-- 설정-->
+<script type="text/javascript">
+
+//function 메소드명(평성)(아귀먼트1....){}
+
+
+	function WindowLoad() {
+		// 객체지향 : 큰데이서 작은데로
+		// window : 모든 윈도우창에 부모
+		// document : 모든 문서 부모
+		
+		window.alert('알림창입니다.');
+		// window 생략할 수 있다.
+		alert('알림창2입니다.');
+	}
+	
+	function Login() {
+		/* var : object -> 모든 데이터 타입을 갖는다. */
+		
+		var frm = document.javascriptfrm;
+		alert(frm.userid.value);
+		alert(frm.passwd.value);
+		
+		var userid = frm.userid.value;
+		var passwd = frm.passwd.value;
+		
+		if(userid == "" && passwd == ""){
+			alert('공백');
+		if(userid=="kim1234" && passwd=="1234"){
+			alert('로그인 되었습니다.');
+		}else{
+			alert('아이디나 비밀번호가 틀렸습니다.')
+		}
+		}
+	}
+	
+	
+	
+	</script>
+
+
+
+
+</head>
+
+<!-- onload : 페이지가 호출되면 body onload javascript 호출 -->
+
+<body onload="WindowLoad()">
+	<form action="" name="javascriptfrm"	>안녕하세요 반갑습니다.
+	
+	<input type="text" name="userid" id=""/>
+	<input type="text" name="passwd" id=""/>
+	 
+	 <input type="button" onclick="Login()" value="login"/>
+	
+	</form>
+
+</body>
+</html>
